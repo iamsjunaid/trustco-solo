@@ -112,6 +112,7 @@ button {
 button:hover {
   background-color: darken(var(--primary-color), 10%);
   color: var(--primary-color);
+  transition: all .3s ease-out;
 }
 
 /* Utility Classes */
@@ -229,6 +230,32 @@ button:hover {
   width: 4.5rem;
 }
 
+/* navbar */
+
+#navbar nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .links {
+  display: none;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#navbar #login{
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+#navbar #login:hover{
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
   .hero-content {
     display: flex;
@@ -245,5 +272,13 @@ button:hover {
 
   .brands-container {
     gap: 5rem;
+  }
+
+  #navbar .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
   }
 }
