@@ -74,7 +74,7 @@ a:hover {
   --primary-color: #043a53;
   --secondary-color: #fff;
   --accent-color: #f0b73f;
-  --background-color: #f4f4f4;
+  --background-color:#F2F5F6;
   --text-color: #333;
 }
 
@@ -206,6 +206,29 @@ button:hover {
   display: none;
 }
 
+/* Brands section */
+#brands-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.brands-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* padding: 1rem; */
+}
+
+#brands-section img{
+  width: 4.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .hero-content {
     display: flex;
@@ -218,5 +241,9 @@ button:hover {
 
   #hero5{
     display: block;
+  }
+
+  .brands-container {
+    gap: 5rem;
   }
 }
