@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Section</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,6 +32,9 @@
                     <button id="login">Login</button>
                     <button>Sign Up</button>
                 </div>
+                <div class="menu">
+                    <img id="menu-icon" src="/assets/Menu.png" alt="menu" onclick="toggleMenu()">
+                </div>
             </nav>
         </div>
     </header>
@@ -49,6 +53,7 @@
             <img src="/assets/Hero 6.png">
         </div>
     </header>
+
     <section id="brands-section">
         <div>
             <p>Trusted by the best in the world</p>
@@ -61,6 +66,17 @@
             <img src="/assets/Amazon.png" alt="amazon">
         </div>
     </section>
+
+    <script>
+        function toggleMenu() {
+            console.log('clicked');
+            const menu = document.querySelector('.links');
+            console.log(menu);
+            
+            menu.classList.toggle('active');
+        }
+    </script>
+
 </body>
 
 </html>
