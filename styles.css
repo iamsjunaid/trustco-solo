@@ -85,12 +85,12 @@ body {
 }
 
 /* Margins and Padding */
-body,
+/* body,
 header,
 footer,
 section {
   padding: 1rem;
-}
+} */
 
 /* Consistent Spacing */
 .container {
@@ -296,6 +296,44 @@ button:hover {
   text-decoration: underline;
 }
 
+/* Video section */
+#video-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+  text-align: center;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+.video-text {
+  text-align: left;
+  color: var(--secondary-color);
+}
+
+.video-text span {
+  color: var(--accent-color);
+}
+
+.video-thumbnail {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .hero-content {
     display: flex;
@@ -335,5 +373,21 @@ button:hover {
     display: flex;
     gap: 1.5rem;
   }
+
+  .video-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 2rem;
+    /* width: 80%; */
+    padding: 3rem 5rem;
+  }
+
+  .video-text h1{
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
 }
 
