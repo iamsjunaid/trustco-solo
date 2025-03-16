@@ -303,7 +303,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 0 2rem;
+  padding: 2rem 2rem 0 2rem;
   text-align: center;
   background-color: var(--primary-color);
   margin: 0 auto;
@@ -322,6 +322,7 @@ button:hover {
   width: 100%;
   text-align: center;
   position: relative;
+  background-size: cover;
 }
 
 #play-button {
@@ -329,7 +330,8 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
+  width: 50px;
+  height: 50px;
   color: var(--accent-color);
   cursor: pointer;
 }
@@ -378,15 +380,18 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* align-items: center; */
     gap: 2rem;
-    /* width: 80%; */
     padding: 3rem 5rem;
   }
 
   .video-text h1{
     font-size: 2.5rem;
     width: 100%;
+  }
+
+  #play-button {
+    width: 100px;
+    height: 100px;
   }
 
 }
