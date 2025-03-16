@@ -54,7 +54,6 @@ h6 {
 
 /* Paragraphs */
 p {
-  margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -254,7 +253,6 @@ button:hover {
 
 .links {
   display: none;
-
 }
 
 .active {
@@ -263,7 +261,7 @@ button:hover {
   color: white;
   list-style: none;
   width: 50%;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   text-align: right;
   border: var(--primary-color) 1px solid;
   border-radius: 5px;
@@ -283,7 +281,7 @@ button:hover {
   gap: 1.5rem;
 }
 
-#navbar nav{
+#navbar nav {
   width: 100%;
 }
 
@@ -336,6 +334,52 @@ button:hover {
   cursor: pointer;
 }
 
+/* Benefits section */
+#benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  padding: 4rem 6rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.badge {
+  color: var(--secondary-color);
+  padding: .5rem 1rem;
+  background-color: var(--primary-color);
+  border-radius: 100px;
+  width: 8rem;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#benefits-text h1{
+  font-size: 4rem;
+}
+
+#benefits-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 1rem;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  text-align: left;
+  gap: 1.5rem;
+  padding: 2rem 1.2rem;
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+
 @media screen and (min-width: 768px) {
   .hero-content {
     display: flex;
@@ -384,7 +428,7 @@ button:hover {
     padding: 3rem 5rem;
   }
 
-  .video-text h1{
+  .video-text h1 {
     font-size: 2.5rem;
     width: 100%;
   }
@@ -394,5 +438,7 @@ button:hover {
     height: 100px;
   }
 
+  #benefits-text {
+    text-align: left;
+  }
 }
-
