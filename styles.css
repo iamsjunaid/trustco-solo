@@ -74,7 +74,7 @@ a:hover {
   --primary-color: #043a53;
   --secondary-color: #fff;
   --accent-color: #f0b73f;
-  --background-color:#F2F5F6;
+  --background-color: #f2f5f6;
   --text-color: #333;
 }
 
@@ -112,7 +112,7 @@ button {
 button:hover {
   background-color: darken(var(--primary-color), 10%);
   color: var(--primary-color);
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 /* Utility Classes */
@@ -172,7 +172,7 @@ button:hover {
 #hero {
   background-color: var(--background-color);
   text-align: center;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,7 +185,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 
 .hero-content h1 {
@@ -198,12 +198,12 @@ button:hover {
   color: var(--primary-color);
 }
 
-#hero .btn{
-  box-shadow: 0px 23px 47px 0px #043A533D;
+#hero .btn {
+  box-shadow: 0px 23px 47px 0px #043a533d;
   font-size: 16px;
 }
 
-#hero5{
+#hero5 {
   display: none;
 }
 
@@ -226,20 +226,56 @@ button:hover {
   /* padding: 1rem; */
 }
 
-#brands-section img{
+#brands-section img {
   width: 4.5rem;
 }
 
 /* navbar */
 
-#navbar nav{
+#navbar nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#navbar .links {
+#navbar .auth-buttons {
   display: none;
+}
+
+#navbar nav {
+  position: relative;
+}
+
+#navbar .links {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+.links {
+  display: none;
+
+}
+
+.active {
+  display: block;
+  background-color: var(--secondary-color);
+  color: white;
+  list-style: none;
+  width: 50%;
+  padding: 1rem .5rem;
+  text-align: right;
+  border: var(--primary-color) 1px solid;
+  border-radius: 5px;
+}
+
+.active a {
+  color: var(--primary-color);
+}
+
+.active a:hover {
+  text-decoration: none;
+  border-bottom: #043a53 1px solid;
 }
 
 .auth-buttons {
@@ -247,12 +283,16 @@ button:hover {
   gap: 1.5rem;
 }
 
-#navbar #login{
+#navbar nav{
+  width: 100%;
+}
+
+#navbar #login {
   background-color: #fff;
   color: var(--primary-color);
 }
 
-#navbar #login:hover{
+#navbar #login:hover {
   text-decoration: underline;
 }
 
@@ -266,12 +306,17 @@ button:hover {
     padding: 2rem;
   }
 
-  #hero5{
+  #hero5 {
     display: block;
   }
 
   .brands-container {
     gap: 5rem;
+  }
+
+  #navbar .links,
+  #navbar nav {
+    position: static;
   }
 
   #navbar .links {
@@ -281,4 +326,14 @@ button:hover {
     gap: 2rem;
     list-style: none;
   }
+
+  .menu {
+    display: none;
+  }
+
+  #navbar .auth-buttons {
+    display: flex;
+    gap: 1.5rem;
+  }
 }
+
