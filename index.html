@@ -117,11 +117,13 @@
     </section>
 
     <section id="building-bridges">
-        <div>
-            <img src="/assets/Left Image.png" alt="building bridges between companies and customers">
-        </div>
+        <picture>
+            <source media="(max-width: 767px)" srcset="/assets/building-bridges-mobile.png">
+            <source media="(min-width: 768px)" srcset="/assets/building-bridges-desktop.png">
+            <img src="/assets/building-bridges-desktop.png" alt="video of teams working in an office" id="video-bg">
+        </picture>
         <div class="building-bridges-text">
-            <h1>Building bridges between companies and customers</h1>
+            <h1>Building Bridges Between<span style="color: #92A7B0;"> Companies And Customers</span></h1>
             <p>with evaluating in depth variety of data sets and including the speed of tech adaptation we can build
                 birdges between any companies and their customers.</p>
             <button class="badge badge-with-icon" id="building-bridges-badge">
