@@ -114,6 +114,12 @@ button:hover {
   transition: all 0.3s ease-out;
 }
 
+button:hover i{
+  background-color: darken(var(--primary-color), 10%);
+  color: var(--primary-color);
+  transition: all 0.3s ease-out;
+}
+
 /* Utility Classes */
 .mt-1 {
   margin-top: 0.5rem;
@@ -347,7 +353,7 @@ button:hover {
 
 .badge {
   color: var(--secondary-color);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: var(--primary-color);
   border-radius: 100px;
   width: 8rem;
@@ -357,7 +363,7 @@ button:hover {
   align-items: center;
 }
 
-#benefits-text h1{
+#benefits-text h1 {
   font-size: 4rem;
 }
 
@@ -383,7 +389,42 @@ button:hover {
 }
 
 #benefits-badge {
-  margin: .5rem auto;
+  margin: 0.5rem auto;
+}
+
+/* building-bridges section */
+#building-bridges {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.building-bridges-text{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#building-bridges-badge{
+  width: 12rem;
+  justify-content: space-between;
+}
+
+.arrow-icon {
+  font-size: 8rem;
+  padding: .2rem;
+  background-color: #F2F5F629;
+  color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.badge-with-icon {
+  padding: .8rem 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -460,5 +501,23 @@ button:hover {
   #benefits-cards {
     display: flex;
     flex-direction: row;
+  }
+
+  #building-bridges {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .building-bridges-text{
+    text-align: left;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  #building-bridges-badge{
+    align-self: flex-start;
+    text-align: left;
   }
 }
