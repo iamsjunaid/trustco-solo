@@ -428,6 +428,26 @@ button:hover i{
   padding: .8rem 1.5rem;
 }
 
+/* Numbers section */
+#numbers{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 4rem;
+}
+
+#numbers h1 {
+  color: var(--primary-color);
+  margin-bottom: .8rem;
+}
+
+#numbers p {
+  font-weight: bold;
+  color: #404040;
+}
+
 @media screen and (min-width: 768px) {
   .hero-content {
     display: flex;
@@ -521,5 +541,9 @@ button:hover i{
     align-self: flex-start;
     text-align: left;
     width: 40%;
+  }
+
+  #numbers{
+    grid-template-columns: repeat(4, 1fr);
   }
 }
