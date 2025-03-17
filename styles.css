@@ -395,7 +395,7 @@ button:hover i{
 /* building-bridges section */
 #building-bridges {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -411,7 +411,7 @@ button:hover i{
 }
 
 #building-bridges-badge{
-  width: 12rem;
+  width: 60%;
   justify-content: space-between;
 }
 
@@ -519,5 +519,6 @@ button:hover i{
   #building-bridges-badge{
     align-self: flex-start;
     text-align: left;
+    width: 40%;
   }
 }
