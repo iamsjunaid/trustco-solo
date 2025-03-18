@@ -83,14 +83,6 @@ body {
   background-color: var(--background-color);
 }
 
-/* Margins and Padding */
-/* body,
-header,
-footer,
-section {
-  padding: 1rem;
-} */
-
 /* Consistent Spacing */
 .container {
   padding: 1rem;
@@ -448,7 +440,61 @@ button:hover i{
   color: #404040;
 }
 
-@media screen and (min-width: 768px) {
+/* Tablet view */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding: 2rem;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  #brands-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+  }
+  
+  .brands-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  #video-bg {
+    height: auto; 
+    width: 100%; 
+    max-width: 1000px; 
+  }
+
+  #benefits {
+    padding: 4rem;
+    text-align: left;
+  }
+  
+  #benefits-cards {
+    margin: 2rem 0 0 0;
+  }
+
+  #benefits-badge {
+    margin: 0 0 2rem 0;
+  }
+  
+}
+
+/* Desktop view */
+@media screen and (min-width: 1024px) {
   .hero-content {
     display: flex;
     flex-direction: row;
