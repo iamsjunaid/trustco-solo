@@ -646,9 +646,4 @@ button:hover i {
     text-align: left;
   }
 
-  #see-team-badge{
-    width: 80%;
-    align-self: flex-start;
-  }
-
 }
