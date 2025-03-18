@@ -106,7 +106,7 @@ button:hover {
   transition: all 0.3s ease-out;
 }
 
-button:hover i{
+button:hover i {
   background-color: darken(var(--primary-color), 10%);
   color: var(--primary-color);
   transition: all 0.3s ease-out;
@@ -396,32 +396,32 @@ button:hover i{
   background-color: var(--secondary-color);
 }
 
-.building-bridges-text{
+.building-bridges-text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 90%;
 }
 
-#building-bridges-badge{
+#building-bridges-badge {
   width: 60%;
   justify-content: space-between;
 }
 
 .arrow-icon {
   font-size: 8rem;
-  padding: .2rem;
-  background-color: #F2F5F629;
+  padding: 0.2rem;
+  background-color: #f2f5f629;
   color: var(--secondary-color);
   border-radius: 50%;
 }
 
 .badge-with-icon {
-  padding: .8rem 1.5rem;
+  padding: 0.8rem 1.5rem;
 }
 
 /* Numbers section */
-#numbers{
+#numbers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -432,12 +432,49 @@ button:hover i{
 
 #numbers h1 {
   color: var(--primary-color);
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 #numbers p {
   font-weight: bold;
   color: #404040;
+}
+
+/* Founder section */
+#meet-founder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+#founder-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 95%;
+}
+
+#founder-text p:last-child {
+  font-weight: bold;
+}
+
+#founder-text span {
+  font-weight: 200;
+}
+
+#see-team-badge{
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  text-align: center;
+  width: 95%;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
 /* Tablet view */
@@ -463,7 +500,7 @@ button:hover i{
     padding: 2rem;
     align-items: center;
   }
-  
+
   .brands-container {
     display: flex;
     justify-content: center;
@@ -471,18 +508,18 @@ button:hover i{
     flex-wrap: wrap;
     gap: 2rem;
   }
-  
+
   #video-bg {
-    height: auto; 
-    width: 100%; 
-    max-width: 1000px; 
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
   }
 
   #benefits {
     padding: 4rem;
     text-align: left;
   }
-  
+
   #benefits-cards {
     margin: 2rem 0 0 0;
   }
@@ -490,8 +527,12 @@ button:hover i{
   #benefits-badge {
     margin: 0 0 2rem 0;
   }
-  
+
+  #see-team-badge{
+    width: 50%;
+  }
 }
+
 
 /* Desktop view */
 @media screen and (min-width: 1024px) {
@@ -577,19 +618,37 @@ button:hover i{
     align-items: center;
   }
 
-  .building-bridges-text{
+  .building-bridges-text {
     text-align: left;
     gap: 1rem;
     align-items: flex-start;
   }
-  
-  #building-bridges-badge{
+
+  #building-bridges-badge {
     align-self: flex-start;
     text-align: left;
     width: 40%;
   }
 
-  #numbers{
+  #numbers {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  #meet-founder {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 5rem;
+  }
+
+  #founder-text {
+    width: 50%;
+    text-align: left;
+  }
+
+  #see-team-badge{
+    width: 80%;
+    align-self: flex-start;
+  }
+
 }
