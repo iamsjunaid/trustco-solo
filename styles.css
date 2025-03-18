@@ -467,7 +467,7 @@ button:hover i {
   font-weight: 200;
 }
 
-#see-team-badge{
+#see-team-badge {
   display: flex;
   justify-content: space-around;
   align-self: center;
@@ -512,12 +512,12 @@ button:hover i {
   padding: 2rem;
   border-radius: 10px;
   background-color: var(--secondary-color);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.testimonial p:first-of-type{
+.testimonial p:first-of-type {
   font-size: 4rem;
-  color: #F0B73F;
+  color: #f0b73f;
   /* size: 4rem; */
   height: 2rem;
 }
@@ -609,11 +609,10 @@ button:hover i {
     margin: 0 0 2rem 0;
   }
 
-  #see-team-badge{
+  #see-team-badge {
     width: 50%;
   }
 }
-
 
 /* Desktop view */
 @media screen and (min-width: 1024px) {
@@ -726,9 +725,41 @@ button:hover i {
     text-align: left;
   }
 
-  #see-team-badge{
+  #see-team-badge {
     width: 80%;
     align-self: flex-start;
   }
 
+  #testimonials {
+    padding: 4rem 1rem;
+  }
+
+  .testimonial-cards {
+    flex-direction: row;
+  }
+
+  .testimonial-card {
+    width: 40vw;
+    height: 30vh;
+  }
+
+  .testimonials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+  }
+
+  #see-all-btn-container-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 10%;
+  }
+
+  #see-all-btn-container-mobile {
+    display: none;
+  }
 }
