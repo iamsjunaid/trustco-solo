@@ -477,6 +477,87 @@ button:hover i {
   margin-top: 2rem;
 }
 
+/* Testimonials section */
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* padding: 4rem 5rem; */
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+#see-all-btn-container-desktop {
+  display: none;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.testimonial p:first-of-type{
+  font-size: 4rem;
+  color: #F0B73F;
+  /* size: 4rem; */
+  height: 2rem;
+}
+
+.user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-info {
+  text-align: left;
+}
+
+.user-info p:nth-child(1) {
+  font-weight: bold;
+}
+
+.user-info p:nth-child(2) {
+  font-weight: lighter;
+  font-size: small;
+  color: #404040;
+}
+
+.see-all-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.see-all-btn a {
+  color: #000;
+}
+
+.see-all-btn i {
+  color: var(--primary-color);
+}
+
 /* Tablet view */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .hero-content {
@@ -627,7 +708,6 @@ button:hover i {
   #building-bridges-badge {
     align-self: flex-start;
     text-align: left;
-    width: 40%;
   }
 
   #numbers {
