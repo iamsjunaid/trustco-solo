@@ -566,6 +566,7 @@ button:hover i {
   padding: 2rem 0.2rem;
   text-align: center;
   background-color: var(--secondary-color);
+  margin: 0 auto;
 }
 
 .blogs-header {
@@ -573,7 +574,7 @@ button:hover i {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  /* width: 90%; */
+  background-color: var(--secondary-color);
 }
 
 .blogs-header span {
@@ -587,7 +588,6 @@ button:hover i {
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-  background-color: var(--background-color);
 }
 
 .blog-card {
@@ -598,7 +598,7 @@ button:hover i {
   text-align: left;
   gap: 1rem;
   border-radius: 16px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   background-color: var(--secondary-color);
 }
 
@@ -683,10 +683,21 @@ button:hover i {
   #see-team-badge {
     width: 50%;
   }
+
+  .blog-card {
+    width: 80%;
+  }
+
+  .blog-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 /* Desktop view */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .hero-content {
     display: flex;
     flex-direction: row;
@@ -811,7 +822,6 @@ button:hover i {
 
   .testimonial-card {
     width: 40vw;
-    height: 30vh;
   }
 
   .testimonials-header {
@@ -832,5 +842,22 @@ button:hover i {
 
   #see-all-btn-container-mobile {
     display: none;
+  }
+
+  #blogs {
+    padding: 4rem;
+  }
+
+  .blogs-cards {
+    flex-direction: row;
+  }
+
+  .blogs-header {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .blog-card {
+    width: 22.4rem;
   }
 }
