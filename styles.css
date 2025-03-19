@@ -1019,4 +1019,12 @@ button:hover i {
     padding: 4rem;
     gap: 3rem;
   }
+
+  .site-credit-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
 }
