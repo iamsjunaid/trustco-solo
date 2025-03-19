@@ -704,6 +704,57 @@ button:hover i {
   font-weight: bold;
 }
 
+/* Site credit section*/
+#site-credit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  padding: 2rem;
+  color:#92A7B0;
+}
+
+.site-credit-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-credit-copyright{
+  text-align: center;
+}
+
+#site-credit hr {
+  width: 90%;
+  border: 1px solid var(--primary-color);
+}
+
+#site-credit ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+#site-credit select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--background-color);
+  color: #92A7B0;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
+}
+
 
 /* Tablet view */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
