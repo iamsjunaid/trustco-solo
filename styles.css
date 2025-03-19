@@ -688,6 +688,11 @@ button:hover i {
   color: var(--text-color);
 }
 
+.footer-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .footer-links ul {
   list-style: none;
   text-align: left;
@@ -955,5 +960,12 @@ button:hover i {
   #get-trial-badge {
     align-self: flex-start;
     width: 60%;
+  }
+
+  #footer {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4rem;
+    gap: 3rem;
   }
 }
