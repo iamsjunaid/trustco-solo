@@ -658,6 +658,47 @@ button:hover i {
   width: 80%;
 }
 
+/* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 80%;
+  align-self: flex-start;
+  color: var(--text-color);
+}
+
+.footer-links ul {
+  list-style: none;
+  text-align: left;
+  font-size: medium;
+}
+
+.footer-links ul li:first-of-type {
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+}
+
 
 /* Tablet view */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
