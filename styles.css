@@ -724,6 +724,14 @@ button:hover i {
     align-items: center;
     width: 100%;
   }
+
+  #get-trial-badge {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #F0B73F;
+    width: 40%;
+  }
 }
 
 /* Desktop view */
@@ -889,5 +897,22 @@ button:hover i {
 
   .blog-card {
     width: 22.4rem;
+  }
+
+  #cta-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .cta-text {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #get-trial-badge {
+    align-self: flex-start;
+    width: 60%;
   }
 }
