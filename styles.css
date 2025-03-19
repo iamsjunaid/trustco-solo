@@ -556,6 +556,79 @@ button:hover i {
   color: var(--primary-color);
 }
 
+/* Blogs section */
+#blogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0.2rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.blogs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  /* width: 90%; */
+}
+
+.blogs-header span {
+  color: var(--primary-color);
+}
+
+.blogs-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color);
+}
+
+.blog-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: .6rem;
+}
+
+.blog-text span {
+  color: #404040;
+}
+
+.read-story-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .4rem;
+}
+
+.read-story-container a{
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.read-story-container i{
+  color: var(--primary-color);
+}
+
 /* Tablet view */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .hero-content {
@@ -610,8 +683,6 @@ button:hover i {
   #see-team-badge {
     width: 50%;
   }
-
-
 }
 
 /* Desktop view */
