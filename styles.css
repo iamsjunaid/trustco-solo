@@ -629,6 +629,36 @@ button:hover i {
   color: var(--primary-color);
 }
 
+/* CTA section */
+#cta-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #12141D;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--secondary-color);
+}
+
+#get-trial-badge {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #F0B73F;
+  width: 80%;
+}
+
+
 /* Tablet view */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .hero-content {
