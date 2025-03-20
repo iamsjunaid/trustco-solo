@@ -231,14 +231,13 @@ button:hover i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 #navbar .auth-buttons {
   display: none;
-}
-
-#navbar nav {
-  position: relative;
 }
 
 #navbar .links {
@@ -275,10 +274,6 @@ button:hover i {
 .auth-buttons {
   display: flex;
   gap: 1.5rem;
-}
-
-#navbar nav {
-  width: 100%;
 }
 
 #navbar #login {
@@ -404,7 +399,7 @@ button:hover i {
 
 #building-bridges-badge {
   width: 60%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .arrow-icon {
@@ -697,11 +692,19 @@ button:hover i {
   list-style: none;
   text-align: left;
   font-size: medium;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .footer-links ul li:first-of-type {
   margin-bottom: 0.6rem;
   font-weight: bold;
+  color: var(--text-color);
+}
+
+.footer-links ul li a {
+  color: var(--text-color);
 }
 
 /* Site credit section*/
@@ -950,6 +953,10 @@ button:hover i {
     width: 40%;
   }
 
+  #building-bridges-badge {
+    width: 14rem;
+  }
+
   .contact-card {
     width: 32rem;
   }
@@ -987,9 +994,17 @@ button:hover i {
     gap: 5rem;
   }
 
+  #navbar nav {
+    padding: 1rem 2rem;
+  }
+
   #navbar .links,
   #navbar nav {
     position: static;
+  }
+
+  .links li a {
+    color: var(--primary-color);
   }
 
   #navbar .links {
@@ -1080,7 +1095,6 @@ button:hover i {
   }
 
   #see-team-badge {
-    width: 80%;
     align-self: flex-start;
   }
 
@@ -1157,6 +1171,10 @@ button:hover i {
     gap: 3rem;
   }
 
+  .contact-header {
+    margin-top: 2rem;
+  }
+
   .contact-cards {
     flex-direction: row;
     justify-content: space-around;
@@ -1168,6 +1186,7 @@ button:hover i {
 
   .contact-card {
     width: 32rem;
+    height: 18rem;
   }
 
   .site-credit-text {
@@ -1196,8 +1215,12 @@ button:hover i {
   .submit-btn-container {
     width: min-content;
   }
-  
+
   .submit-btn {
     width: 10rem;
+  }
+
+  .terms-container {
+    gap: 1rem;
   }
 }
