@@ -606,7 +606,7 @@ button:hover i {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  padding: .6rem;
+  padding: 0.6rem;
 }
 
 .blog-text span {
@@ -617,15 +617,15 @@ button:hover i {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: .4rem;
+  gap: 0.4rem;
 }
 
-.read-story-container a{
+.read-story-container a {
   font-weight: bold;
   color: var(--text-color);
 }
 
-.read-story-container i{
+.read-story-container i {
   color: var(--primary-color);
 }
 
@@ -638,7 +638,7 @@ button:hover i {
   gap: 2rem;
   padding: 2rem;
   text-align: center;
-  background-color: #12141D;
+  background-color: #12141d;
 }
 
 .cta-text {
@@ -654,7 +654,7 @@ button:hover i {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #F0B73F;
+  background: #f0b73f;
   width: 80%;
 }
 
@@ -710,9 +710,9 @@ button:hover i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
   padding: 2rem;
-  color:#92A7B0;
+  color: #92a7b0;
 }
 
 .site-credit-text {
@@ -723,7 +723,7 @@ button:hover i {
   gap: 1rem;
 }
 
-.site-credit-copyright{
+.site-credit-copyright {
   text-align: center;
 }
 
@@ -745,16 +745,136 @@ button:hover i {
   border-radius: 5px;
   border: none;
   background-color: var(--background-color);
-  color: #92A7B0;
+  color: #92a7b0;
 }
 
 .language {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .2rem;
+  gap: 0.2rem;
 }
 
+/* Contact section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.contact-header {
+  padding: 1rem;
+}
+
+.contact-header h1 {
+  margin-bottom: 0.8rem;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-color);
+}
+
+.contact-card div {
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.contact-form-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.contact-form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  border-radius: 10px;
+  margin: 1rem auto;
+  width: 24rem;
+  padding-left: 40px;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 16px;
+}
+
+.icon-inside-input {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.terms-and-submit-container {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.terms-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.terms-container input {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50px;
+}
+
+.submit-btn {
+  width: 24rem;
+}
 
 /* Tablet view */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -826,8 +946,25 @@ button:hover i {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #F0B73F;
+    background: #f0b73f;
     width: 40%;
+  }
+
+  .contact-card {
+    width: 32rem;
+  }
+
+  .contact-form-header {
+    padding: 2rem;
+  }
+
+  .input {
+    width: 24rem;
+  }
+
+  .submit-btn {
+    width: 24rem;
+    align-self: center;
   }
 }
 
@@ -1018,6 +1155,19 @@ button:hover i {
     align-items: flex-start;
     padding: 4rem;
     gap: 3rem;
+  }
+
+  .contact-cards {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .contact-card {
+    width: 32rem;
   }
 
   .site-credit-text {
